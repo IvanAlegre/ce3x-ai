@@ -3,31 +3,40 @@
 ## Fórmula base
 
 ```
-Consumo = BASE × clima × año × fachada × ventanas × orientación × aislamiento × posición × calefacción × refrigeración × iluminación × ACS
+Consumo = BASE × año × clima × fachada × ventanas × aislamiento × orientación × posición × tipo × calefacción × refrigeración × iluminación × ACS
 ```
 
-**BASE = 122 kWh/m²·año** (calibrado con caso real)
+**BASE = 180 kWh/m²·año** (calibrado con 30k+ certificados reales de Madrid)
+
+## Metodología de calibración
+
+El algoritmo fue calibrado usando datos abiertos del Registro de Certificados de Eficiencia Energética de la Comunidad de Madrid (datos.comunidad.madrid).
+
+### Referencia base
+- Zona: D3 (Madrid, Getafe, Toledo)
+- Tipo: Piso en bloque
+- Calefacción: Gas natural
+- Década: 2000s
+- Consumo mediano: **180 kWh/m²·año**
+
+### Factores calculados vs datos reales
+Los factores se calcularon como ratio del consumo mediano de cada categoría vs la referencia.
 
 ## Factores por categoría
 
-### Zona climática
-| Zona | Factor | Ejemplos |
-|------|--------|----------|
-| A3 | 0.70 | Cádiz, Málaga costa |
-| A4 | 0.65 | Almería |
-| B3 | 0.80 | Sevilla, Córdoba |
-| B4 | 0.75 | Valencia, Alicante, Murcia |
-| C1 | 0.95 | Santander, Bilbao, A Coruña |
-| C2 | 0.90 | Barcelona, Girona |
-| C3 | 0.85 | Granada, Jaén |
-| C4 | 0.82 | Badajoz, Cáceres |
-| D1 | 1.10 | Vitoria, Pamplona, Lugo |
-| D2 | 1.05 | Huesca, Lleida |
-| D3 | 1.00 | Madrid, Getafe, Toledo, Zaragoza (REFERENCIA) |
-| E1 | 1.20 | Burgos, León, Ávila, Soria |
-
 ### Año de construcción
-| Período | Factor | Normativa |
+Calibrado con medias reales por década:
+
+| Período | Factor | Consumo típico | Fuente |
+|---------|--------|----------------|--------|
+| <1960 | 1.35 | 243 kWh | Dataset Madrid |
+| 1960-69 | 1.33 | 239 kWh | Dataset Madrid |
+| 1970-79 | 1.27 | 229 kWh | Dataset Madrid |
+| 1980-89 | 1.10 | 199 kWh | Dataset Madrid |
+| 1990-99 | 1.10 | 199 kWh | Dataset Madrid |
+| 2000-09 | 1.00 | 180 kWh | **Referencia** |
+| 2010-19 | 0.73 | 131 kWh | Dataset Madrid |
+| ≥2020 | 0.50 | 90 kWh | Dataset Madrid |
 |---------|--------|-----------|
 | Antes 1980 | 1.25 | Sin normativa térmica |
 | 1980-2006 | 1.15 | NBE-CT-79 |

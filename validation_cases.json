@@ -1,0 +1,612 @@
+[
+  {
+    "consumo_real": 70.8,
+    "letra_real": "C",
+    "superficie": 75.0,
+    "year": 1960,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor - Caudal Ref. Variable",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 123.9,
+    "letra_real": "C",
+    "superficie": 164.0,
+    "year": 1969,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor - Caudal Ref. Variable",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 132.4,
+    "letra_real": "D",
+    "superficie": 115.0,
+    "year": 1962,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 125.0,
+    "letra_real": "D",
+    "superficie": 66.3,
+    "year": 1965,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 213.0,
+    "letra_real": "E",
+    "superficie": 59.4,
+    "year": 1960,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Efecto Joule",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 185.0,
+    "letra_real": "E",
+    "superficie": 58.0,
+    "year": 1969,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 299.8,
+    "letra_real": "F",
+    "superficie": 58.0,
+    "year": 1960,
+    "tipo": "piso",
+    "calefaccion": "",
+    "calefac_tipo": "",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 309.4,
+    "letra_real": "F",
+    "superficie": 93.8,
+    "year": 1960,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 345.2,
+    "letra_real": "G",
+    "superficie": 60.8,
+    "year": 1967,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 349.5,
+    "letra_real": "G",
+    "superficie": 56.1,
+    "year": 1960,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 64.9,
+    "letra_real": "C",
+    "superficie": 76.0,
+    "year": 1971,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 92.0,
+    "letra_real": "C",
+    "superficie": 124.0,
+    "year": 1978,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 164.4,
+    "letra_real": "D",
+    "superficie": 99.0,
+    "year": 1970,
+    "tipo": "unifamiliar",
+    "calefaccion": "",
+    "calefac_tipo": "",
+    "acs": "GLP"
+  },
+  {
+    "consumo_real": 103.5,
+    "letra_real": "D",
+    "superficie": 94.0,
+    "year": 1975,
+    "tipo": "piso",
+    "calefaccion": "BiomasaPellet",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 180.7,
+    "letra_real": "E",
+    "superficie": 84.7,
+    "year": 1978,
+    "tipo": "piso",
+    "calefaccion": "GasoleoC",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasoleoC"
+  },
+  {
+    "consumo_real": 256.2,
+    "letra_real": "E",
+    "superficie": 100.0,
+    "year": 1970,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 399.5,
+    "letra_real": "F",
+    "superficie": 167.4,
+    "year": 1976,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 452.7,
+    "letra_real": "F",
+    "superficie": 132.0,
+    "year": 1970,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 553.1,
+    "letra_real": "G",
+    "superficie": 90.0,
+    "year": 1977,
+    "tipo": "unifamiliar",
+    "calefaccion": "GasoleoC",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasoleoC"
+  },
+  {
+    "consumo_real": 406.5,
+    "letra_real": "G",
+    "superficie": 103.0,
+    "year": 1977,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Condensación",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 120.1,
+    "letra_real": "C",
+    "superficie": 95.4,
+    "year": 1986,
+    "tipo": "unifamiliar",
+    "calefaccion": "BiomasaPellet",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 128.5,
+    "letra_real": "C",
+    "superficie": 145.0,
+    "year": 1980,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor - Caudal Ref. Variable",
+    "acs": "GLP"
+  },
+  {
+    "consumo_real": 186.9,
+    "letra_real": "D",
+    "superficie": 169.0,
+    "year": 1989,
+    "tipo": "unifamiliar",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 123.9,
+    "letra_real": "D",
+    "superficie": 190.0,
+    "year": 1987,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 144.1,
+    "letra_real": "E",
+    "superficie": 199.0,
+    "year": 1989,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 148.9,
+    "letra_real": "E",
+    "superficie": 115.0,
+    "year": 1986,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Condensación",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 312.7,
+    "letra_real": "F",
+    "superficie": 70.0,
+    "year": 1987,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 423.3,
+    "letra_real": "F",
+    "superficie": 126.1,
+    "year": 1986,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasoleoC"
+  },
+  {
+    "consumo_real": 480.0,
+    "letra_real": "G",
+    "superficie": 156.7,
+    "year": 1985,
+    "tipo": "unifamiliar",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Condensación",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 509.0,
+    "letra_real": "G",
+    "superficie": 119.0,
+    "year": 1986,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasoleoC"
+  },
+  {
+    "consumo_real": 93.5,
+    "letra_real": "C",
+    "superficie": 168.0,
+    "year": 1994,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 85.3,
+    "letra_real": "C",
+    "superficie": 98.1,
+    "year": 1994,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 129.3,
+    "letra_real": "D",
+    "superficie": 71.4,
+    "year": 1997,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 142.9,
+    "letra_real": "D",
+    "superficie": 176.8,
+    "year": 1998,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 220.0,
+    "letra_real": "E",
+    "superficie": 132.3,
+    "year": 1992,
+    "tipo": "unifamiliar",
+    "calefaccion": "BiomasaOtros",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 169.2,
+    "letra_real": "E",
+    "superficie": 74.0,
+    "year": 1994,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 320.7,
+    "letra_real": "F",
+    "superficie": 98.1,
+    "year": 1991,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Efecto Joule",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 304.8,
+    "letra_real": "F",
+    "superficie": 69.0,
+    "year": 1997,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 357.1,
+    "letra_real": "G",
+    "superficie": 81.9,
+    "year": 1998,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 365.9,
+    "letra_real": "G",
+    "superficie": 144.9,
+    "year": 1992,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 99.1,
+    "letra_real": "C",
+    "superficie": 141.0,
+    "year": 2006,
+    "tipo": "unifamiliar",
+    "calefaccion": "GasoleoC",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasoleoC"
+  },
+  {
+    "consumo_real": 78.6,
+    "letra_real": "C",
+    "superficie": 63.5,
+    "year": 2009,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 106.5,
+    "letra_real": "D",
+    "superficie": 52.0,
+    "year": 2006,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 125.4,
+    "letra_real": "D",
+    "superficie": 102.6,
+    "year": 2007,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 188.2,
+    "letra_real": "E",
+    "superficie": 52.4,
+    "year": 2009,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 216.0,
+    "letra_real": "E",
+    "superficie": 120.0,
+    "year": 2006,
+    "tipo": "unifamiliar",
+    "calefaccion": "GasoleoC",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasoleoC"
+  },
+  {
+    "consumo_real": 331.8,
+    "letra_real": "F",
+    "superficie": 62.1,
+    "year": 2001,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Efecto Joule",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 328.0,
+    "letra_real": "F",
+    "superficie": 81.8,
+    "year": 2008,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Condensación",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 413.6,
+    "letra_real": "G",
+    "superficie": 110.0,
+    "year": 2003,
+    "tipo": "piso",
+    "calefaccion": "GasoleoC",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasoleoC"
+  },
+  {
+    "consumo_real": 346.5,
+    "letra_real": "G",
+    "superficie": 162.0,
+    "year": 2001,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 60.4,
+    "letra_real": "C",
+    "superficie": 102.0,
+    "year": 2013,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Condensación",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 88.8,
+    "letra_real": "C",
+    "superficie": 86.0,
+    "year": 2018,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 101.8,
+    "letra_real": "D",
+    "superficie": 170.0,
+    "year": 2017,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 103.1,
+    "letra_real": "D",
+    "superficie": 99.0,
+    "year": 2016,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Condensación",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 153.3,
+    "letra_real": "E",
+    "superficie": 72.0,
+    "year": 2014,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 143.3,
+    "letra_real": "E",
+    "superficie": 99.0,
+    "year": 2010,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 433.6,
+    "letra_real": "F",
+    "superficie": 67.0,
+    "year": 2013,
+    "tipo": "unifamiliar",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "ElectricidadPeninsular"
+  },
+  {
+    "consumo_real": 302.7,
+    "letra_real": "F",
+    "superficie": 60.9,
+    "year": 2011,
+    "tipo": "piso",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 514.5,
+    "letra_real": "G",
+    "superficie": 145.0,
+    "year": 2018,
+    "tipo": "unifamiliar",
+    "calefaccion": "GasNatural",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 361.2,
+    "letra_real": "G",
+    "superficie": 100.0,
+    "year": 2010,
+    "tipo": "piso",
+    "calefaccion": "ElectricidadPeninsular",
+    "calefac_tipo": "Bomba de Calor",
+    "acs": "GasNatural"
+  },
+  {
+    "consumo_real": 247.4,
+    "letra_real": "E",
+    "superficie": 136.0,
+    "year": 2003,
+    "tipo": "unifamiliar",
+    "calefaccion": "GasoleoC",
+    "calefac_tipo": "Caldera Estándar",
+    "acs": "GasoleoC"
+  }
+]
