@@ -46,13 +46,29 @@
 ### Simulación de mejoras
 - Detecta mejoras aplicables según datos introducidos
 - Calcula nuevo consumo/letra para cada mejora
-- Muestra porcentaje de ahorro y €/m²/año estimado
-- Ordena por mayor impacto
+- Muestra porcentaje de ahorro y €/año estimado
+- **Ahorro individual por mejora en 10 años** (no combinado, porque nadie aplica todas)
+- Ordena por mejor relación coste/beneficio
 - Indica coste relativo (€ a €€€€)
 
-### Recomendaciones
-- Texto descriptivo de mejoras prioritarias
-- Basado en deficiencias detectadas en los datos
+### Validación y persistencia
+- localStorage guarda datos entre sesiones
+- Validación por paso con highlight de campos con error
+- Botones "Siguiente" deshabilitados hasta validar
+
+### Aislamiento con auto-selección
+- **Auto-selecciona según año construcción**: <2006 → sin aislamiento, 2006-2019 → básico, ≥2020 → mejorado
+- Evita que usuarios dejen el default incorrecto (error común: 159 vs 183 kWh)
+- Labels claros con valores U de referencia:
+  - 🧱 Solo ladrillo (sin aislante): U > 1.0 W/m²K
+  - 🧤 Aislante en cámara: U 0.5-1.0 W/m²K
+  - 🏠 SATE / Aislamiento exterior: U < 0.5 W/m²K
+- Tooltip de ayuda para usuarios sin conocimiento técnico
+
+### Coste energético
+- PRICE_KWH = 0.18 €/kWh (media España 2024-2025)
+- Muestra coste anual estimado en €
+- Comparativa percentil ("Peor que el 60% de viviendas")
 
 ## Ideas futuras
 

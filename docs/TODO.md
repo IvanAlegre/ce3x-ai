@@ -1,5 +1,15 @@
 # Próximos pasos
 
+## Completado ✅
+
+- [x] **Guardado local** - Datos persisten en localStorage entre sesiones
+- [x] **Validación mejorada** - Campos obligatorios con highlight de error
+- [x] **Ahorro individual** - Proyección 10 años por cada mejora (no combinado)
+- [x] **Auto-selección aislamiento** - Según año de construcción
+- [x] **Labels con U-values** - Para usuarios con certificado existente
+- [x] **Coste energético** - Estimación €/año con PRICE_KWH = 0.18
+- [x] **Comparativa percentil** - "Peor que el X% de viviendas"
+
 ## Prioritarios
 
 - [ ] **Más casos de validación** - Conseguir 2-3 certificados reales más para afinar algoritmo
