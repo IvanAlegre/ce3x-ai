@@ -273,15 +273,20 @@
 
                     <fieldset>
                         <legend class="block text-sm font-medium text-gray-700 mb-2">
-                            Aislamiento térmico <span class="text-red-500">*</span>
+                            Aislamiento de fachada <span class="text-red-500">*</span>
+                            <span class="tooltip cursor-help ml-1">
+                                <span class="text-eco-green-600 text-sm">ℹ️</span>
+                                <span class="tooltip-text" style="white-space: normal; width: 250px; left: 0; transform: none;">Si tienes el certificado, mira la transmitancia (U) de fachada. U > 1.0 = sin aislante. U 0.5-1.0 = básico. U < 0.5 = mejorado.</span>
+                            </span>
                         </legend>
                         <div class="space-y-2">
                             <label class="radio-card flex items-center p-3 border-2 border-gray-200 rounded-xl cursor-pointer">
                                 <input type="radio" name="aislamiento" value="sin-aislamiento" class="sr-only">
                                 <div class="flex-1 flex items-center justify-between">
                                     <div>
-                                        <div class="font-medium text-gray-900">Sin aislamiento</div>
-                                        <div class="text-xs text-gray-500">Solo cámara de aire (típico pre-2006)</div>
+                                        <div class="font-medium text-gray-900">🧱 Solo ladrillo (sin aislante)</div>
+                                        <div class="text-xs text-gray-500">Doble hoja con cámara de aire vacía</div>
+                                        <div class="text-xs text-amber-600 mt-0.5">U > 1.0 W/m²K · Típico antes de 2006</div>
                                     </div>
                                     <div class="radio-check w-6 h-6 bg-eco-green-500 rounded-full items-center justify-center">
                                         <span class="text-white text-sm">✓</span>
@@ -289,11 +294,12 @@
                                 </div>
                             </label>
                             <label class="radio-card flex items-center p-3 border-2 border-gray-200 rounded-xl cursor-pointer">
-                                <input type="radio" name="aislamiento" value="basico" class="sr-only" checked>
+                                <input type="radio" name="aislamiento" value="basico" class="sr-only">
                                 <div class="flex-1 flex items-center justify-between">
                                     <div>
-                                        <div class="font-medium text-gray-900">Aislamiento básico</div>
-                                        <div class="text-xs text-gray-500">3-5 cm en cámara (2006-2019)</div>
+                                        <div class="font-medium text-gray-900">🧤 Aislante en cámara</div>
+                                        <div class="text-xs text-gray-500">Poliestireno, lana mineral o similar (3-5 cm)</div>
+                                        <div class="text-xs text-amber-600 mt-0.5">U 0.5-1.0 W/m²K · Típico 2006-2019</div>
                                     </div>
                                     <div class="radio-check w-6 h-6 bg-eco-green-500 rounded-full items-center justify-center">
                                         <span class="text-white text-sm">✓</span>
@@ -304,8 +310,9 @@
                                 <input type="radio" name="aislamiento" value="mejorado" class="sr-only">
                                 <div class="flex-1 flex items-center justify-between">
                                     <div>
-                                        <div class="font-medium text-gray-900">Aislamiento SATE/exterior</div>
-                                        <div class="text-xs text-gray-500">6-10 cm o rehabilitación reciente</div>
+                                        <div class="font-medium text-gray-900">🏠 SATE / Aislamiento exterior</div>
+                                        <div class="text-xs text-gray-500">Fachada ventilada o rehabilitación energética</div>
+                                        <div class="text-xs text-amber-600 mt-0.5">U < 0.5 W/m²K · Obra nueva o reforma</div>
                                     </div>
                                     <div class="radio-check w-6 h-6 bg-eco-green-500 rounded-full items-center justify-center">
                                         <span class="text-white text-sm">✓</span>
@@ -313,6 +320,7 @@
                                 </div>
                             </label>
                         </div>
+                        <p class="text-xs text-gray-400 mt-2">💡 ¿No lo sabes? Si tu casa es anterior a 2006 y no se ha reformado, probablemente sea "Solo ladrillo".</p>
                     </fieldset>
 
                     <fieldset id="posicion-fieldset">
@@ -1100,15 +1108,32 @@
             }
         });
 
+        // Auto-select aislamiento based on year
+        function autoSelectAislamiento() {
+            const yearInput = document.getElementById('ano-construccion');
+            const year = parseInt(yearInput.value);
+            if (!year || formData.aislamiento) return; // Don't override user selection
+            
+            // Only auto-select if user hasn't touched it
+            const radios = document.querySelectorAll('input[name="aislamiento"]');
+            const anyChecked = Array.from(radios).some(r => r.checked);
+            if (anyChecked) return;
+            
+            if (year < 2006) {
+                document.querySelector('input[name="aislamiento"][value="sin-aislamiento"]')?.click();
+            } else if (year < 2020) {
+                document.querySelector('input[name="aislamiento"][value="basico"]')?.click();
+            } else {
+                document.querySelector('input[name="aislamiento"][value="mejorado"]')?.click();
+            }
+        }
+
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
             // Load saved data
             const savedStep = loadFromStorage();
             
-            // Set defaults if no saved data
-            if (!formData.aislamiento) {
-                document.querySelector('input[name="aislamiento"][value="basico"]').checked = true;
-            }
+            // Set defaults if no saved data (only posicion and iluminacion, not aislamiento)
             if (!formData.posicion) {
                 document.querySelector('input[name="posicion"][value="intermedio"]').checked = true;
             }
@@ -1124,6 +1149,11 @@
                 el.addEventListener('change', () => {
                     el.classList.remove('field-error');
                     updateButtonState();
+                    
+                    // Auto-select aislamiento when year changes
+                    if (el.id === 'ano-construccion') {
+                        autoSelectAislamiento();
+                    }
                     
                     // Save on change
                     collectStepData(currentStep);
