@@ -201,7 +201,7 @@
                     </div>
                 </div>
 
-                <button onclick="nextStep()" id="next-step-1" 
+                <button onclick="nextStep()" id="next-step-1" disabled
                         class="w-full bg-eco-green-500 text-white py-3 px-6 rounded-xl font-semibold mt-8 hover:bg-eco-green-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed">
                     Siguiente →
                 </button>
@@ -332,7 +332,7 @@
                             class="flex-1 bg-gray-200 text-gray-700 py-3 px-6 rounded-xl font-semibold hover:bg-gray-300 transition-colors">
                         ← Anterior
                     </button>
-                    <button onclick="nextStep()" id="next-step-2"
+                    <button onclick="nextStep()" id="next-step-2" disabled
                             class="flex-1 bg-eco-green-500 text-white py-3 px-6 rounded-xl font-semibold hover:bg-eco-green-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed">
                         Siguiente →
                     </button>
@@ -432,7 +432,7 @@
                             class="flex-1 bg-gray-200 text-gray-700 py-3 px-6 rounded-xl font-semibold hover:bg-gray-300 transition-colors">
                         ← Anterior
                     </button>
-                    <button onclick="calculate()" id="calculate-btn"
+                    <button onclick="calculate()" id="calculate-btn" disabled
                             class="flex-1 bg-eco-green-500 text-white py-3 px-6 rounded-xl font-semibold hover:bg-eco-green-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed">
                         Calcular Certificación ⚡
                     </button>
@@ -726,7 +726,7 @@
                 let baseConsumption = 122;
                 
                 // Age factor - Calibrado
-                const age = 2026 - parseInt(data['ano-construccion']);
+                const age = new Date().getFullYear() - parseInt(data['ano-construccion']);
                 let ageFactor = 1.0;
                 if (age > 50) ageFactor = 1.25;
                 else if (age > 30) ageFactor = 1.15;
@@ -1257,13 +1257,24 @@ Clase ${rating} - ${consumption}
             // Add validation listeners
             document.querySelectorAll('select, input').forEach(element => {
                 element.addEventListener('change', function() {
-                    const stepButton = document.getElementById(`next-step-${currentStep}`);
-                    if (stepButton) {
-                        stepButton.disabled = !validateStep(currentStep);
-                    }
+                    updateButtonState();
                 });
             });
         });
+        
+        function updateButtonState() {
+            // Step 1
+            const btn1 = document.getElementById('next-step-1');
+            if (btn1) btn1.disabled = !validateStep(1);
+            
+            // Step 2
+            const btn2 = document.getElementById('next-step-2');
+            if (btn2) btn2.disabled = !validateStep(2);
+            
+            // Step 3 (calculate button)
+            const btn3 = document.getElementById('calculate-btn');
+            if (btn3) btn3.disabled = !validateStep(3);
+        }
     </script>
 </body>
 </html>
