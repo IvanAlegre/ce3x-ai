@@ -1015,16 +1015,10 @@
                 return;
             }
             
-            // Calculate 10 year savings if all applied
-            const allApplied = { ...data };
-            top.forEach(t => allApplied[t.field] = t.val);
-            const bestResult = EnergyCalculator.calculate(allApplied);
-            const totalSavings10y = Math.round((currentConsumption - bestResult.consumption) * superficie * PRICE_KWH * 10);
-            document.getElementById('savings-10y-amount').textContent = `~${totalSavings10y.toLocaleString('es-ES')} €`;
-            
             el.innerHTML = top.map((imp, i) => {
                 const color = EnergyCalculator.getRatingColor(imp.newRating);
                 const isBest = i === 0;
+                const savings10y = imp.yearlySavingsEur * 10;
                 return `
                 <div class="bg-white rounded-lg p-3 shadow-sm border ${isBest ? 'border-eco-green-400 ring-1 ring-eco-green-200' : 'border-gray-100'}">
                     ${isBest ? '<div class="text-xs text-eco-green-600 font-semibold mb-1">⭐ Mejor relación coste/beneficio</div>' : ''}
@@ -1048,9 +1042,15 @@
                         </div>
                         <span class="text-xs font-semibold text-green-600">-${imp.savingsPercent}%</span>
                     </div>
-                    <div class="text-xs text-gray-500 mt-1 ml-7">Ahorro: ~${imp.yearlySavingsEur}€/año</div>
+                    <div class="text-xs text-gray-500 mt-1 ml-7">
+                        Ahorro: <span class="font-medium text-green-700">~${imp.yearlySavingsEur}€/año</span> · 
+                        <span class="text-green-600">~${savings10y.toLocaleString('es-ES')}€ en 10 años</span>
+                    </div>
                 </div>`;
             }).join('');
+            
+            // Hide the combined 10y savings section
+            document.getElementById('savings-10y').classList.add('hidden');
         }
 
         function restart() {
