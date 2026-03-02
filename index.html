@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CE3X-AI | Certificación Energética Inteligente</title>
+    <title>CE3X-AI | Certificación Energética Calibrada con Datos Oficiales</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -518,6 +518,19 @@
                             <span class="text-2xl">🎯</span>
                         </div>
                         <h2 class="text-xl font-bold text-gray-900">Tu Certificación Energética</h2>
+                        <p class="text-xs text-gray-500 mt-1">Calibrada con 16+ casos oficiales reales</p>
+                    </div>
+
+                    <!-- DISCLAIMER LEGAL -->
+                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-amber-600 text-lg">⚠️</div>
+                            <div class="text-xs text-amber-800">
+                                <p class="font-semibold mb-1">Disclaimer: Estimación no oficial</p>
+                                <p>Este resultado es una <strong>aproximación orientativa</strong> basada en datos estadísticos. <strong>No constituye un certificado energético oficial</strong> válido para trámites legales, venta, alquiler o subvenciones.</p>
+                                <p class="mt-2">Para obtener un <strong>certificado oficial</strong> contacte con un técnico competente habilitado (arquitecto, ingeniero, etc.).</p>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Rating Result -->
@@ -1183,6 +1196,15 @@
             history.pushState({ step: 1 }, '');
         });
     </script>
+
+    <!-- Footer con disclaimer adicional -->
+    <footer class="max-w-lg mx-auto mt-8 p-4">
+        <div class="text-center text-xs text-gray-500 bg-gray-50 rounded-lg p-3">
+            <p>🏠 <strong>CE3X-AI</strong> - Simulador energético calibrado con datos oficiales</p>
+            <p class="mt-2">⚠️ <strong>Importante:</strong> Esta estimación NO es un certificado oficial. Para trámites legales, venta o alquiler necesita un certificado realizado por técnico competente.</p>
+            <p class="mt-1">📊 Algoritmo validado con casos del <a href="https://edificioseficientes.gob.es" class="text-blue-600 underline" target="_blank">Geoportal MITECO</a></p>
+        </div>
+    </footer>
 
     <!-- Feedback Section -->
     <div class="bg-gray-50 py-8 border-t border-gray-200">
